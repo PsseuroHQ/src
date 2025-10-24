@@ -1,0 +1,160 @@
+{
+  "intro": {
+    "title": "Space Station Alpha",
+    "text": "Year 2525. You're a cadet on Space Station Alpha when alarms blare: 'System failure! The AI needs recoding!' The captain: 'Learn to code or we're adrift forever!'",
+    "image": "🚀🛸⚠️",
+    "choices": [{ "text": "Accept the mission!", "next": "cargo" }]
+  },
+  "cargo": {
+    "title": "Cargo Bay Variables",
+    "text": "In the cargo bay, boxes float everywhere. The robot CHIP-8: 'Use VARIABLES to label cargo! Each box needs an identifier to track contents.'",
+    "image": "📦🤖",
+    "concept": {
+      "name": "Variables",
+      "explanation": "Variables label and store data.",
+      "code": "let cargoBox = 'Food';\nlet weight = 500;"
+    },
+    "choices": [
+      { "text": "Assign variables to cargo", "next": "cargo_success", "correct": true },
+      { "text": "Try to remember everything", "next": "cargo_lesson", "correct": false }
+    ]
+  },
+  "cargo_success": {
+    "title": "Cargo Organized!",
+    "text": "CHIP-8 celebrates: 'Perfect! Variables let the system track 10,000 items effortlessly!' The bay's lights turn green.",
+    "image": "✅🎉",
+    "reward": {
+      "points": 10,
+      "knowledge": "variables",
+      "achievement": "variable_master"
+    },
+    "choices": [{ "text": "Head to life support", "next": "lifesupport" }]
+  },
+  "cargo_lesson": {
+    "title": "System Overload",
+    "text": "CHIP-8 sparks: 'Too much data! Without variables, the computer can't track anything. Let me show you...'",
+    "image": "⚡😵",
+    "reward": {
+      "points": 5,
+      "knowledge": "variables"
+    },
+    "choices": [{ "text": "Learn to use variables", "next": "cargo_success" }]
+  },
+  "lifesupport": {
+    "title": "Life Support Conditionals",
+    "text": "Oxygen system flashes red. CHIP-8: 'Use IF-ELSE! IF oxygen less than 20%, activate emergency, ELSE maintain normal.' Current: 15%.",
+    "image": "💨⚠️",
+    "concept": {
+      "name": "Conditionals",
+      "explanation": "Make decisions based on conditions.",
+      "code": "if (oxygen < 20) {\n  activateEmergency();\n} else {\n  normalFlow();\n}"
+    },
+    "choices": [
+      { "text": "Activate emergency tanks", "next": "lifesupport_success", "correct": true },
+      { "text": "Keep normal flow", "next": "lifesupport_lesson", "correct": false }
+    ]
+  },
+  "lifesupport_success": {
+    "title": "Breathing Easy!",
+    "text": "Oxygen floods the station! CHIP-8: 'You checked the condition (15% < 20%) and took correct action. Conditionals save lives!'",
+    "image": "😮‍💨✨",
+    "reward": {
+      "points": 15,
+      "knowledge": "conditionals",
+      "achievement": "conditional_champion"
+    },
+    "choices": [{ "text": "Rush to engine room", "next": "engine" }]
+  },
+  "lifesupport_lesson": {
+    "title": "Critical Error!",
+    "text": "Alarms intensify! CHIP-8: 'Wrong! 15% IS less than 20%, so IF is TRUE. We need emergency tanks!'",
+    "image": "🚨😰",
+    "reward": {
+      "points": 5,
+      "knowledge": "conditionals"
+    },
+    "choices": [{ "text": "Activate emergency", "next": "lifesupport_success" }]
+  },
+  "engine": {
+    "title": "Engine Loop",
+    "text": "Engine needs 100 micro-adjustments per second. CHIP-8: 'No time for 100 commands! Use a LOOP to repeat automatically!'",
+    "image": "⚙️🔥",
+    "concept": {
+      "name": "Loops",
+      "explanation": "Repeat actions efficiently.",
+      "code": "for (let i = 0; i < 100; i++) {\n  adjustEngine();\n}"
+    },
+    "choices": [
+      { "text": "Create a loop", "next": "engine_success", "correct": true },
+      { "text": "Adjust manually", "next": "engine_lesson", "correct": false }
+    ]
+  },
+  "engine_success": {
+    "title": "Engines Online!",
+    "text": "Engines roar to life! CHIP-8: 'One loop handled 100 adjustments instantly. That's the power of loops!'",
+    "image": "🚀💫",
+    "reward": {
+      "points": 20,
+      "knowledge": "loops",
+      "achievement": "loop_legend"
+    },
+    "choices": [{ "text": "Navigate to bridge", "next": "bridge" }]
+  },
+  "engine_lesson": {
+    "title": "Too Slow!",
+    "text": "You're only at #5 when CHIP-8 stops you: 'At this rate, 10 minutes! Loops do it in milliseconds!'",
+    "image": "⏱️😓",
+    "reward": {
+      "points": 5,
+      "knowledge": "loops"
+    },
+    "choices": [{ "text": "Use a loop", "next": "engine_success" }]
+  },
+  "bridge": {
+    "title": "Bridge Functions",
+    "text": "Captain: 'We call navigate(), scan(), and communicate() constantly. Create FUNCTIONS so we can reuse them!'",
+    "image": "🎮👨‍✈️",
+    "concept": {
+      "name": "Functions",
+      "explanation": "Reusable code blocks.",
+      "code": "function navigate() {\n  checkCourse();\n}\n\nnavigate();"
+    },
+    "choices": [
+      { "text": "Create reusable functions", "next": "bridge_success", "correct": true },
+      { "text": "Write code each time", "next": "bridge_lesson", "correct": false }
+    ]
+  },
+  "bridge_success": {
+    "title": "Mission Control!",
+    "text": "Station hums perfectly! Captain: 'With functions, complex operations become simple. You saved us all!'",
+    "image": "⭐🎖️",
+    "reward": {
+      "points": 25,
+      "knowledge": "functions",
+      "achievement": "function_hero"
+    },
+    "choices": [{ "text": "Receive your medal", "next": "finale" }]
+  },
+  "bridge_lesson": {
+    "title": "Code Chaos",
+    "text": "Screen fills with duplicate code. CHIP-8: 'Functions prevent repetition! Write once, use everywhere!'",
+    "image": "💻😵‍💫",
+    "reward": {
+      "points": 5,
+      "knowledge": "functions"
+    },
+    "choices": [{ "text": "Create functions", "next": "bridge_success" }]
+  },
+  "finale": {
+    "title": "Hero of the Station",
+    "text": "Captain salutes: 'You mastered fundamentals and saved 10,000 lives! Variables organize, conditionals decide, loops repeat, functions simplify!'",
+    "image": "🏅🎊👨‍🚀",
+    "choices": [{ "text": "Mission complete!", "next": "complete" }]
+  },
+  "complete": {
+    "title": "Mission Complete!",
+    "text": "Congratulations! You've saved Space Station Alpha and mastered coding fundamentals!",
+    "image": "🎊🚀",
+    "choices": [{ "text": "Return to menu", "next": "character_select", "reset": true }]
+  }
+}

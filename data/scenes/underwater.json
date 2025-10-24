@@ -1,0 +1,160 @@
+{
+  "intro": {
+    "title": "Atlantis Kingdom",
+    "text": "You discover lost Atlantis! The Sea King appears: 'Our ancient code-powered defenses are failing. Help us!'",
+    "image": "🌊🏛️👑",
+    "choices": [{ "text": "Dive deeper!", "next": "coral" }]
+  },
+  "coral": {
+    "title": "Coral Code Variables",
+    "text": "Glowing coral reefs store memories. Dolphin Echo: 'Each coral is a VARIABLE holding sea knowledge. Name them to access wisdom!'",
+    "image": "🪸🐬",
+    "concept": {
+      "name": "Variables",
+      "explanation": "Variables store and label data.",
+      "code": "let coralColor = 'blue';\nlet brightness = 85;"
+    },
+    "choices": [
+      { "text": "Label the coral variables", "next": "coral_success", "correct": true },
+      { "text": "Try to sense without labels", "next": "coral_lesson", "correct": false }
+    ]
+  },
+  "coral_success": {
+    "title": "Coral Illuminated!",
+    "text": "The reef pulses with light! Echo: 'Yes! Variables organize ocean data - temperature, species, currents - all labeled!'",
+    "image": "✨🪸",
+    "reward": {
+      "points": 10,
+      "knowledge": "variables",
+      "achievement": "variable_master"
+    },
+    "choices": [{ "text": "Swim to the gate", "next": "gate" }]
+  },
+  "coral_lesson": {
+    "title": "Lost in Translation",
+    "text": "You're overwhelmed! Echo: 'Without variable labels, data is chaos. Let me teach you...'",
+    "image": "😵🌀",
+    "reward": {
+      "points": 5,
+      "knowledge": "variables"
+    },
+    "choices": [{ "text": "Learn variable naming", "next": "coral_success" }]
+  },
+  "gate": {
+    "title": "Guardian Gate",
+    "text": "Ancient turtle guards gate: 'Only those who understand IF-ELSE enter. IF you have the pearl, gate opens, ELSE sealed.' You have it!",
+    "image": "🐢🚪",
+    "concept": {
+      "name": "Conditionals",
+      "explanation": "Check conditions to decide.",
+      "code": "if (hasPearl) {\n  openGate();\n} else {\n  staySealed();\n}"
+    },
+    "choices": [
+      { "text": "Show the pearl", "next": "gate_success", "correct": true },
+      { "text": "Try to swim through", "next": "gate_lesson", "correct": false }
+    ]
+  },
+  "gate_success": {
+    "title": "Gateway Opened!",
+    "text": "Gate glows and opens! Turtle nods: 'Wise. You evaluated hasPearl equals true and chose correctly!'",
+    "image": "🚪✨",
+    "reward": {
+      "points": 15,
+      "knowledge": "conditionals",
+      "achievement": "conditional_champion"
+    },
+    "choices": [{ "text": "Enter the palace", "next": "palace" }]
+  },
+  "gate_lesson": {
+    "title": "Barrier Holds",
+    "text": "You bounce off! Turtle: 'Gate checks IF hasPearl is TRUE. You have it, but didn't use the condition!'",
+    "image": "💥😅",
+    "reward": {
+      "points": 5,
+      "knowledge": "conditionals"
+    },
+    "choices": [{ "text": "Show the pearl", "next": "gate_success" }]
+  },
+  "palace": {
+    "title": "Palace Loop Current",
+    "text": "Healing current flows in circles. Seahorse: 'Current LOOPS around 7 pillars to distribute energy. One loop, seven repetitions!'",
+    "image": "🌀💎",
+    "concept": {
+      "name": "Loops",
+      "explanation": "Repeat actions efficiently.",
+      "code": "for (let i = 0; i < 7; i++) {\n  flowAroundPillar();\n}"
+    },
+    "choices": [
+      { "text": "Use a loop for 7 pillars", "next": "palace_success", "correct": true },
+      { "text": "Direct flow 7 times", "next": "palace_lesson", "correct": false }
+    ]
+  },
+  "palace_success": {
+    "title": "Current Restored!",
+    "text": "Energy flows perfectly! Seahorse: 'Beautiful! One loop handles any repetitions. Ancients built Atlantis with loops!'",
+    "image": "⚡🏛️",
+    "reward": {
+      "points": 20,
+      "knowledge": "loops",
+      "achievement": "loop_legend"
+    },
+    "choices": [{ "text": "Meet the Sea King", "next": "king" }]
+  },
+  "palace_lesson": {
+    "title": "Energy Wasted",
+    "text": "You're exhausted after 3 pillars! Seahorse: 'Loops do the work for you. Watch...'",
+    "image": "😓💨",
+    "reward": {
+      "points": 5,
+      "knowledge": "loops"
+    },
+    "choices": [{ "text": "Try the loop", "next": "palace_success" }]
+  },
+  "king": {
+    "title": "Sea King's Functions",
+    "text": "Sea King: 'Defense system calls protectNorth(), South(), East(), West() constantly. Create FUNCTIONS to organize!'",
+    "image": "👑🔱",
+    "concept": {
+      "name": "Functions",
+      "explanation": "Reusable organized code.",
+      "code": "function protectNorth() {\n  raiseShield();\n}\n\nprotectNorth();"
+    },
+    "choices": [
+      { "text": "Create defense functions", "next": "king_success", "correct": true },
+      { "text": "Code each separately", "next": "king_lesson", "correct": false }
+    ]
+  },
+  "king_success": {
+    "title": "Kingdom Defended!",
+    "text": "Atlantis glows with energy! King: 'You mastered functions - foundation of great code! You saved our kingdom!'",
+    "image": "🏛️✨🛡️",
+    "reward": {
+      "points": 25,
+      "knowledge": "functions",
+      "achievement": "function_hero"
+    },
+    "choices": [{ "text": "Receive royal honor", "next": "finale" }]
+  },
+  "king_lesson": {
+    "title": "System Overload",
+    "text": "Code tangles! Echo: 'Functions keep code organized. Group related commands into named functions!'",
+    "image": "🌀😰",
+    "reward": {
+      "points": 5,
+      "knowledge": "functions"
+    },
+    "choices": [{ "text": "Use functions", "next": "king_success" }]
+  },
+  "finale": {
+    "title": "Guardian of Atlantis",
+    "text": "Sea King crowns you: 'Variables organize, conditionals decide, loops repeat, functions structure. Atlantis remembers you forever!'",
+    "image": "👑🏆🌊",
+    "choices": [{ "text": "Surface victorious!", "next": "complete" }]
+  },
+  "complete": {
+    "title": "Atlantis Saved!",
+    "text": "Congratulations! You've saved Atlantis and mastered coding fundamentals!",
+    "image": "🎊🌊",
+    "choices": [{ "text": "Return to menu", "next": "character_select", "reset": true }]
+  }
+}

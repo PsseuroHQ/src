@@ -1,0 +1,160 @@
+﻿{
+  "intro": {
+    "title": "The Magic Forest",
+    "text": "You enter a mystical forest where coding powers the world. A wise owl appears: 'This forest is losing its magic! Learn the ancient art of coding to restore it.'",
+    "image": "🌲✨🦉",
+    "choices": [{ "text": "Begin the adventure!", "next": "village" }]
+  },
+  "village": {
+    "title": "Village of Variables",
+    "text": "Villagers carry labeled boxes. Luna explains: 'These are VARIABLES - containers for information. I store my name in this box!' She shows a box labeled 'name' with 'Luna' inside.",
+    "image": "📦🏘️",
+    "concept": {
+      "name": "Variables",
+      "explanation": "Variables are like labeled boxes that store information.",
+      "code": "let name = 'Luna';\nlet age = 12;"
+    },
+    "choices": [
+      { "text": "Create a variable for your name", "next": "variable_success", "correct": true },
+      { "text": "Just remember it without a box", "next": "variable_lesson", "correct": false }
+    ]
+  },
+  "variable_success": {
+    "title": "Variable Mastery!",
+    "text": "Perfect! The villagers cheer as the fountain glows with magic! You understand that variables help organize information.",
+    "image": "⛲✨",
+    "reward": {
+      "points": 10,
+      "knowledge": "variables",
+      "achievement": "variable_master"
+    },
+    "choices": [{ "text": "Continue to the bridge", "next": "bridge" }]
+  },
+  "variable_lesson": {
+    "title": "A Gentle Lesson",
+    "text": "The owl hoots: 'Computers need variables to track information. Without them, everything is lost!' The villagers help you create your first variable.",
+    "image": "🦉📚",
+    "reward": {
+      "points": 5,
+      "knowledge": "variables"
+    },
+    "choices": [{ "text": "Try again", "next": "variable_success" }]
+  },
+  "bridge": {
+    "title": "Bridge of Conditions",
+    "text": "A sphinx guards the bridge: 'Understand IF-THEN statements to pass!' The bridge has two paths: sunny IF daytime, ELSE moonlit. It's currently night.",
+    "image": "🌉🌙",
+    "concept": {
+      "name": "Conditionals",
+      "explanation": "Make decisions based on true/false conditions.",
+      "code": "if (isDaytime) {\n  takeSunnyPath();\n} else {\n  takeMoonlitPath();\n}"
+    },
+    "choices": [
+      { "text": "Take the moonlit path (ELSE)", "next": "conditional_success", "correct": true },
+      { "text": "Try the sunny path", "next": "conditional_lesson", "correct": false }
+    ]
+  },
+  "conditional_success": {
+    "title": "Wise Choice!",
+    "text": "The sphinx smiles: 'You understand conditions check true/false and act accordingly. Since it's night, you chose ELSE wisely!' The bridge glows.",
+    "image": "🌟🎉",
+    "reward": {
+      "points": 15,
+      "knowledge": "conditionals",
+      "achievement": "conditional_champion"
+    },
+    "choices": [{ "text": "Cross to the river", "next": "river" }]
+  },
+  "conditional_lesson": {
+    "title": "Learning from Mistakes",
+    "text": "Locked! The sphinx explains: 'IF daytime is FALSE, so we use ELSE. Conditions are yes/no questions that guide decisions.'",
+    "image": "🦉💭",
+    "reward": {
+      "points": 5,
+      "knowledge": "conditionals"
+    },
+    "choices": [{ "text": "Choose the correct path", "next": "conditional_success" }]
+  },
+  "river": {
+    "title": "Repeating River",
+    "text": "A frog shows 5 stepping stones: 'Use a LOOP to step on each stone instead of writing step five times!'",
+    "image": "🐸💧",
+    "concept": {
+      "name": "Loops",
+      "explanation": "Repeat actions without duplicating code.",
+      "code": "for (let i = 0; i < 5; i++) {\n  stepOnStone();\n}"
+    },
+    "choices": [
+      { "text": "Use a loop for all 5 stones", "next": "loop_success", "correct": true },
+      { "text": "Write step 5 times", "next": "loop_lesson", "correct": false }
+    ]
+  },
+  "loop_success": {
+    "title": "Loop Master!",
+    "text": "The frog applauds: 'Perfect! One loop for all stones. Imagine 100 stones - loops save time!' The river sparkles with magic.",
+    "image": "🌊✨",
+    "reward": {
+      "points": 20,
+      "knowledge": "loops",
+      "achievement": "loop_legend"
+    },
+    "choices": [{ "text": "Journey to the falls", "next": "falls" }]
+  },
+  "loop_lesson": {
+    "title": "A Better Way",
+    "text": "It works but it's exhausting! The owl: 'Use loops to repeat actions. Much faster and easier to change!'",
+    "image": "😅🦉",
+    "reward": {
+      "points": 5,
+      "knowledge": "loops"
+    },
+    "choices": [{ "text": "Use the loop", "next": "loop_success" }]
+  },
+  "falls": {
+    "title": "Function Falls",
+    "text": "A wizard shows magic spell stones: 'These are FUNCTIONS - reusable spells! Name them once, use many times!' He calls FireSpell() and flames appear.",
+    "image": "🧙‍♂️🔥",
+    "concept": {
+      "name": "Functions",
+      "explanation": "Named code blocks you can reuse.",
+      "code": "function castFire() {\n  createFlame();\n}\n\ncastFire();"
+    },
+    "choices": [
+      { "text": "Create restoreForest() function", "next": "function_success", "correct": true },
+      { "text": "Fix each part manually", "next": "function_lesson", "correct": false }
+    ]
+  },
+  "function_success": {
+    "title": "Forest Restored!",
+    "text": "Your restoreForest() function brings the forest back to life! The wizard: 'Functions organize code into reusable pieces!'",
+    "image": "🌳🌸🦋",
+    "reward": {
+      "points": 25,
+      "knowledge": "functions",
+      "achievement": "function_hero"
+    },
+    "choices": [{ "text": "Meet the Grand Oak", "next": "finale" }]
+  },
+  "function_lesson": {
+    "title": "Working Smarter",
+    "text": "Hours pass fixing each piece. The wizard: 'Use a function! Group steps together and call restoreForest() once!'",
+    "image": "😰🌲",
+    "reward": {
+      "points": 5,
+      "knowledge": "functions"
+    },
+    "choices": [{ "text": "Create the function", "next": "function_success" }]
+  },
+  "finale": {
+    "title": "Grand Oak's Wisdom",
+    "text": "The ancient oak awakens: 'You've learned the four pillars: VARIABLES store, CONDITIONALS decide, LOOPS repeat, FUNCTIONS organize. With these, create anything!'",
+    "image": "🌳👑✨",
+    "choices": [{ "text": "Complete quest!", "next": "complete" }]
+  },
+  "complete": {
+    "title": "Quest Complete!",
+    "text": "Congratulations! You've mastered coding fundamentals through your forest adventure. The magic is restored!",
+    "image": "🎊🏆",
+    "choices": [{ "text": "Return to menu", "next": "character_select", "reset": true }]
+  }
+}
